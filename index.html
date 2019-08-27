@@ -1,2 +1,318 @@
-<h1>Hello my name is Budiyono Salim</h1>
+<!doctype html>
+<html class="no-js" lang="">
 
+<head>
+	<meta charset="utf-8">
+	<title>Budiyono Salim</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="icon.png" height="100">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/prism.css">
+    <style>
+        body {
+            background:#2ddb88;
+            color:#003b1f;
+        }
+
+        .separator {
+            margin:5rem 0;
+        }
+
+        #portfolio {
+            background:#fff;
+            padding:3rem 0;
+            border-top:1px solid #ccc;
+            font-size:20px;
+            color:#666
+        }
+
+        #portfolio p{
+            margin:0 0 2rem;
+        }
+
+        #portfolio h3{
+            color:#333;
+            font-size:22px;
+            font-weight:700;
+        }
+        #skill {
+            background:#fff;
+            padding:3rem 0;
+        }
+
+        #skill h2{
+            color:#2ddb88;
+            margin-top:2rem;
+            font-size:30px;
+            text-align:center;
+        }
+    </style>
+	<meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mx-auto text-center">
+                <img src="static/img/budi.png" height="300" class="rounded-circle">
+                <h1>Budiyono Salim</h1>
+                I am currently a Pythonista.
+                <p>I turned Idea to A Reality.</p>
+
+                <p>Over 10 years+ experiences in Startup, Programming, Scaling</p>
+            </div>
+        </div>
+        <div class="col-md-7 mx-auto">
+<pre class="language-python">
+<code>
+    class Profile(object):
+        full_name = 'Budiyono Salim'
+        tagline = 'I turned idea into reality!\n'
+        education = 'Bachelor Degree in Computer Science'
+        university = 'Bina Nusantara, Jakarta - Indonesia'
+        email = 'byonosalim@gmail.com'
+        mobile = '+62 819 089 75795'
+        whatapps = mobile
+
+        def __init__(self):
+            self.tagline += 'I am a Pythonista\n'
+            self.tagline += 'I love the Zen of Python\n'
+
+        def __str__(self):
+            return "<Profile:{}>".format(self.full_name)
+</code>
+</pre>
+        </div>
+    </div>
+
+    <div id="skill">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Skillset</h2>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="static/img/logo-php.png" height="100">
+                            <img src="static/img/logo-python.png" height="100">
+                            <img src="static/img/logo-es6.png" height="100">
+                        </div>
+
+                        <div class="col-md-6">
+<pre class="language-python">
+<code>
+class Programming(Profile):
+    languages = ['python', 'php', 'javascript']
+
+    framework = [(languages[0], ('Django', 'Flask')),
+                 (languages[1], ('Laravel', 'Symfony')),
+                 (languages[2], ('VueJS', 'ReactJS'))]
+
+    infrastructures = False
+    </code>
+</pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Python Framework</h2>
+                            <img src="static/img/logo-django.png" height="100">
+                            <img src="static/img/logo-flask.png" height="100">
+                        </div>
+                        <div class="col-md-6">
+<pre class="language-python">
+<code>
+class Programming(Profile):
+    languages = ['python', 'php', 'javascript']
+</code>
+</pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Javascript Framework</h2>
+                            <img src="static/img/logo-react.png" height="100">
+                            <img src="static/img/logo-vue.png" height="100">
+                        </div>
+
+                        <div class="col-md-6">
+<pre class="language-python">
+<code>
+class Framework(Programming):
+    def __init__(self):
+        self.framework = [(languages[0], ('Django', 'Flask')),
+                          (languages[1], ('Laravel', 'Symfony')),
+                          (languages[2], ('VueJS', 'ReactJS'))]
+</code>
+</pre>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Infrastructure</h2>
+                            <img src="static/img/logo-gcloud.png" height="100">
+                            <img src="static/img/logo-aws.png" height="100">
+                        </div>
+
+                        <div class="col-md-6">
+<pre class="language-python">
+<code>
+class InfrastructureMixin:
+    def deployment(self):
+        self.infrastructure = ['Google Cloud Platform', 'AWS']
+
+
+class ProgrammingExtra(InfrastructureMixin):
+    infrastructure = False
+
+    def __init__(self):
+        print(self.infrastructures)
+</code>
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="col-md-6">
+                <img src="static/img/lookaftermi-screen.jpg" style="max-width:100%">
+            </div>
+            <div class="col-md-6">
+                <h2>Lookaftermi.com</h2>
+                <p>Lookaftermi is an enabler and marketplace for merchants to offer their services as subscription plans covering beauty, food, education and food.</p>
+
+                <h3>Technology Stack</h3>
+                <img src="static/img/logo-flask.png" height="50">
+                <img src="static/img/logo-elastic.png" height="50">
+                <img src="static/img/logo-redis.png" height="50">
+                <br>
+                <img src="static/img/logo-gcloud.png" height="80">
+            </div>
+        </div>
+
+        <div class="row separator">
+            <div class="col-md-6">
+                <img src="static/img/ibupedia-screen.jpg" style="max-width:100%">
+            </div>
+            <div class="col-md-6">
+                <h2>Ibupedia.com (side project)</h2>
+                <p>Founded in 2013, Ibupedia is one of the largest parenting websites in Indonesia. It provides useful information, advice and guidance about parenting, such as pregnancy, birth, baby advice and parenting tips.</p>
+
+                <p>Today, Ibupedia impressively gets almost 1 million visitors on website and more than 700,000 followers on Instagram, showing we are fully dedicated to constantly share useful contents for Indonesia Parents.</p>
+
+                <h3>Technology Stack</h3>
+                <img src="static/img/logo-django.png" height="50">
+                <img src="static/img/logo-jquery.png" height="50">
+                <img src="static/img/logo-mysql.png" height="50">
+                <br>
+                <img src="static/img/logo-gcloud.png" height="80">
+            </div>
+        </div>
+
+
+        <div class="row separator">
+            <div class="col-md-6">
+                <img src="static/img/hulaa-screen.jpg" style="max-width:100%">
+            </div>
+            <div class="col-md-6">
+                <h2>Hulaa.com (site inactive)</h2>
+                <p>Founded in 2014 and based in Jakarta, Indonesia, Hulaa offers customers the simplest way to plan travel. With its unique sorting features and visual interface, Hulaa will save you time by being the ultimate place to book where you want to go.</p>
+
+                Hulaa presents the most inclusive travel search. If you are looking for something reliable, useful information, extra savings, Hulaa is your choice for the absolute travel sites!.</p>
+
+                <h3>Technology Stack</h3>
+                <img src="static/img/logo-scala.png" height="50">
+                <img src="static/img/logo-elastic.png" height="50">
+                <img src="static/img/logo-jquery.png" height="50">
+                <img src="static/img/logo-postgresql.png" height="50">
+                <br>
+                <img src="static/img/logo-gcloud.png" height="80">
+            </div>
+        </div>
+
+
+        <div class="row separator">
+            <div class="col-md-6">
+                <img src="static/img/razer-screen.png" style="max-width:100%">
+            </div>
+            <div class="col-md-6">
+                <h2>Razerzone.com</h2>
+
+                <p>As a Lead Web Engineer in Razer in 2011, I helped to migrate site to scalable infrastructure Amazon Web Services (AWS), and
+                    revamped Razer global website and E-commerce and turned legacy code into scalable architecture.
+                </p>
+
+                <h3>Technology Stack</h3>
+                <img src="static/img/logo-php.png" height="50">
+                <img src="static/img/logo-jquery.png" height="50">
+                <img src="static/img/logo-mysql.png" height="50"><br><br>
+                <img src="static/img/logo-aws.png" height="80">
+                <br>
+            </div>
+        </div>
+
+
+        <div class="row separator">
+            <div class="col-md-6">
+                <img src="static/img/fupei-screen.jpg" style="max-width:100%">
+            </div>
+            <div class="col-md-6">
+                <h2>FUPEI.com (site inactive)</h2>
+                <p>Founded in 2005, FUPEI.com is one of the top 5 largest social network in Indonesia.</p>
+                <p>We have 200K active members in the past years</p>
+
+                <h3>Technology Stack</h3>
+                <img src="static/img/logo-php.png" height="50">
+                <img src="static/img/logo-jquery.png" height="50">
+                <img src="static/img/logo-mysql.png" height="50">
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+	<script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/prism.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+	</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<script>
+		window.ga = function() {
+			ga.q.push(arguments)
+		};
+		ga.q = [];
+		ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('set', 'transport', 'beacon');
+		ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
